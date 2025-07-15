@@ -12,7 +12,7 @@ Use OpenAI-Compatible RESTful APIs for Amazon Bedrock models.
 """
 
 DEBUG = os.environ.get("DEBUG", "false").lower() != "false"
-AWS_REGION = os.environ.get("AWS_REGION", "eu-west-2")
+AWS_REGION = os.environ.get("AWS_REGION", "us-east-1")
 DEFAULT_MODEL = os.environ.get("DEFAULT_MODEL", "Returned DEFAULT_MODEL (probably failed)")
 DEFAULT_EMBEDDING_MODEL = os.environ.get("DEFAULT_EMBEDDING_MODEL", "Return DEFAULT_EMBEDDING_MODEL (probably failed)")
 ENABLE_CROSS_REGION_INFERENCE = os.environ.get("ENABLE_CROSS_REGION_INFERENCE", "true").lower() != "false"
