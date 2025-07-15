@@ -19,7 +19,7 @@ def main():
     )
 
     # Choose your Bedrock model here
-    model = "anthropic.claude-3-5-sonnet-20240620-v1:0"
+    model = "us.anthropic.claude-3-5-sonnet-20240620-v1:0"
 
     # Chat history
     messages = [
