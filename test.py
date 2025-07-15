@@ -5,7 +5,7 @@ from openai import OpenAI
 
 def main():
     # Read gateway endpoint and secret from the environment:
-    api_base = "http://3.10.208.4:8000/api/v1"
+    api_base = "http://localhost:8000/api/v1"
     api_key  = "31415" 
 
     if not api_base or not api_key:
