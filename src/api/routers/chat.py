@@ -1,4 +1,5 @@
 from typing import Annotated
+import logging
 
 from fastapi import APIRouter, Body, Depends
 from fastapi.responses import StreamingResponse
@@ -40,6 +41,7 @@ async def chat_completions(
     # Exception will be raised if model not supported.
     model = BedrockModel()
     model.validate(chat_request)
+    logging.info(f"Chat request: {chat_request}")
     if chat_request.stream:
         return StreamingResponse(content=model.chat_stream(chat_request), media_type="text/event-stream")
     return await model.chat(chat_request)
